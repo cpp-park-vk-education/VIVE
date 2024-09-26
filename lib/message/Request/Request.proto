@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package request;
+
+message Request 
+{
+
+    message InitMultiplayerState 
+    {
+
+    }
+
+    message JoinState 
+    {
+        optional string code = 1;
+    }
+
+    optional InitMultiplayerState init_multiplayer_state = 1;
+    optional JoinState join_state = 2;
+}
